@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAVEN REALTY — Imobiliária Premium em Austin, TX</title>
+  <meta name="description" content="Casas e apartamentos de luxo em Austin, Texas. Compra, venda e aluguel com atendimento dedicado.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HAVEN REALTY — Imobiliária Premium em Austin, TX">
+  <meta property="og:description" content="Casas e apartamentos de luxo em Austin, Texas. Compra, venda e aluguel com atendimento dedicado.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta name="theme-color" content="#173B32">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23173B32'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Georgia,serif'%20font-size='36'%20font-weight='700'%20fill='%23FFFFFF'%20text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#top" aria-label="HAVEN REALTY">
+        <span class="wm">HAVEN</span><span class="wm-sub">REALTY</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#properties" data-i18n="nav_properties">Propriedades</a></li>
+          <li><a href="#buy" data-i18n="nav_buy">Comprar</a></li>
+          <li><a href="#sell" data-i18n="nav_sell">Vender</a></li>
+          <li><a href="#rent" data-i18n="nav_rent">Alugar</a></li>
+          <li><a href="#neighborhoods" data-i18n="nav_neighborhoods">Bairros</a></li>
+          <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--solid nav-cta" data-i18n="header_cta">Encontre seu lugar</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang="pt" class="is-active">PT</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a href="#contact" class="btn btn--solid btn--sm header-cta" data-i18n="header_cta">Encontre seu lugar</a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="top">
+      <div class="container">
+
+        <div class="hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow" data-i18n="hero_eyebrow">AUSTIN, TX • RESIDENCIAL DE LUXO</p>
+            <h1 class="hero-title" data-i18n-html="hero_title">Encontre o seu <em>lugar</em>.</h1>
+            <p class="hero-sub" data-i18n="hero_subtitle">Casas e apartamentos de luxo selecionados à mão — e um time que conhece cada esquina de Austin. Da primeira visita à chave na mão.</p>
+
+            <form class="hero-search" id="hero-search" role="search" aria-label="Busca de imóveis">
+              <div class="field">
+                <label for="hs-type" data-i18n="search_type">Tipo de imóvel</label>
+                <div class="select-wrap">
+                  <select class="input select-chevron" id="hs-type" name="type">
+                    <option data-i18n="type_option_all">Todos</option>
+                    <option data-i18n="type_option_house">Casas</option>
+                    <option data-i18n="type_option_apartment">Apartamentos</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="hs-hood" data-i18n="search_hood">Bairro</label>
+                <div class="select-wrap">
+                  <select class="input select-chevron" id="hs-hood" name="hood">
+                    <option data-i18n="hood_option_any">Todos os bairros</option>
+                    <option>Maple Hill</option>
+                    <option>Cedar Point</option>
+                    <option>Riverbend</option>
+                    <option>Stonecrest</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="btn btn--solid hero-search-btn" data-i18n="search_button">Buscar</button>
+            </form>
+          </div>
+
+          <figure class="hero-figure reveal">
+            <img src="assets/images/hero.jpg" alt="Fachada moderna de uma casa de luxo" data-i18n-alt="hero_alt" loading="eager" fetchpriority="high">
+          </figure>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num">1.400+</span>
+            <span class="stat-label" data-i18n="hero_stat1_label">Vendas de imóveis</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">98%</span>
+            <span class="stat-label" data-i18n="hero_stat2_label">Satisfação dos clientes</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">15</span>
+            <span class="stat-label" data-i18n="hero_stat3_label">Anos de mercado</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">#1</span>
+            <span class="stat-label" data-i18n="hero_stat4_label">Principal corretora 2025</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="properties section-pad" id="properties">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="prop_eyebrow">A coleção</p>
+          <h2 class="section-title" data-i18n="prop_title">Propriedades em destaque</h2>
+          <p class="section-sub" data-i18n="prop_sub">Uma coleção selecionada em Austin — cada imóvel escolhido por arquitetura, luz e localização.</p>
+        </div>
+
+        <div class="filters reveal" id="property-filters">
+          <div class="filter-group">
+            <span class="filter-label" data-i18n="filter_label_type">Tipo</span>
+            <div class="chips">
+              <button type="button" class="chip is-active" data-type="all" data-i18n="filter_all">Todos</button>
+              <button type="button" class="chip" data-type="house" data-i18n="filter_houses">Casas</button>
+              <button type="button" class="chip" data-type="apartment" data-i18n="filter_apartments">Apartamentos</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label" data-i18n="filter_label_beds">Dormitórios</span>
+            <div class="chips">
+              <button type="button" class="chip is-active" data-beds="any" data-i18n="beds_any">Qualquer</button>
+              <button type="button" class="chip" data-beds="2" data-i18n="beds_2">2+</button>
+              <button type="button" class="chip" data-beds="3" data-i18n="beds_3">3+</button>
+              <button type="button" class="chip" data-beds="4" data-i18n="beds_4">4+</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label" data-i18n="filter_label_price">Preço</span>
+            <div class="chips">
+              <button type="button" class="chip is-active" data-price="any" data-i18n="price_all">Qualquer</button>
+              <button type="button" class="chip" data-price="u750" data-i18n="price_u750">Até US$ 750 mil</button>
+              <button type="button" class="chip" data-price="750_1_5" data-i18n="price_750_1_5">US$ 750 mil – 1,5M</button>
+              <button type="button" class="chip" data-price="1_5" data-i18n="price_1_5">US$ 1,5M+</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="no-results" id="no-results" data-i18n="prop_no_results" hidden>Nenhuma propriedade corresponde aos filtros selecionados.</p>
+
+        <div class="props-grid">
+          <article class="prop-card reveal" data-type="house" data-beds="4" data-price="1.89">
+            <div class="prop-media">
+              <img src="assets/images/prop-1.jpg" alt="Casa de vidro moderna com linhas contemporâneas" data-i18n-alt="prop1_alt" loading="lazy">
+              <span class="prop-badge" data-i18n="badge_house">Casa</span>
+            </div>
+            <div class="prop-body">
+              <p class="prop-loc">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Maple Hill
+              </p>
+              <h3 class="prop-name" data-i18n="prop1_name">Casa de Vidro Moderna</h3>
+              <ul class="prop-spec" aria-label="Especificações">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg>4</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.68 3 4 3.68 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5H4"/><path d="M10 5 8 7"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M17 19v2"/></svg>3</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>3.280 sqft</li>
+              </ul>
+              <p class="prop-price">US$ 1.890.000</p>
+              <a class="btn btn--ghost prop-cta" href="#contact" data-i18n="view_details">Ver detalhes</a>
+            </div>
+          </article>
+
+          <article class="prop-card reveal" data-type="house" data-beds="5" data-price="2.45">
+            <div class="prop-media">
+              <img src="assets/images/prop-2.jpg" alt="Residência Cedar Canyon em madeira e pedra" data-i18n-alt="prop2_alt" loading="lazy">
+              <span class="prop-badge" data-i18n="badge_house">Casa</span>
+            </div>
+            <div class="prop-body">
+              <p class="prop-loc">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Cedar Point
+              </p>
+              <h3 class="prop-name" data-i18n="prop2_name">Residência Cedar Canyon</h3>
+              <ul class="prop-spec" aria-label="Especificações">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg>5</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.68 3 4 3.68 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5H4"/><path d="M10 5 8 7"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M17 19v2"/></svg>4</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>4.120 sqft</li>
+              </ul>
+              <p class="prop-price">US$ 2.450.000</p>
+              <a class="btn btn--ghost prop-cta" href="#contact" data-i18n="view_details">Ver detalhes</a>
+            </div>
+          </article>
+
+          <article class="prop-card reveal" data-type="house" data-beds="4" data-price="1.695">
+            <div class="prop-media">
+              <img src="assets/images/prop-3.jpg" alt="Retiro contemporâneo à beira do lago" data-i18n-alt="prop3_alt" loading="lazy">
+              <span class="prop-badge" data-i18n="badge_house">Casa</span>
+            </div>
+            <div class="prop-body">
+              <p class="prop-loc">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Riverbend
+              </p>
+              <h3 class="prop-name" data-i18n="prop3_name">Retiro à Beira do Lago</h3>
+              <ul class="prop-spec" aria-label="Especificações">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg>4</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.68 3 4 3.68 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5H4"/><path d="M10 5 8 7"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M17 19v2"/></svg>3</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>3.610 sqft</li>
+              </ul>
+              <p class="prop-price">US$ 1.695.000</p>
+              <a class="btn btn--ghost prop-cta" href="#contact" data-i18n="view_details">Ver detalhes</a>
+            </div>
+          </article>
+
+          <article class="prop-card reveal" data-type="house" data-beds="5" data-price="3.2">
+            <div class="prop-media">
+              <img src="assets/images/prop-4.jpg" alt="Residência clássica em Stonecrest" data-i18n-alt="prop4_alt" loading="lazy">
+              <span class="prop-badge" data-i18n="badge_house">Casa</span>
+            </div>
+            <div class="prop-body">
+              <p class="prop-loc">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Stonecrest
+              </p>
+              <h3 class="prop-name" data-i18n="prop4_name">Residência Stonecrest</h3>
+              <ul class="prop-spec" aria-label="Especificações">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg>5</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.68 3 4 3.68 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5H4"/><path d="M10 5 8 7"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M17 19v2"/></svg>5</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>5.040 sqft</li>
+              </ul>
+              <p class="prop-price">US$ 3.200.000</p>
+              <a class="btn btn--ghost prop-cta" href="#contact" data-i18n="view_details">Ver detalhes</a>
+            </div>
+          </article>
+
+          <article class="prop-card reveal" data-type="apartment" data-beds="2" data-price="0.84">
+            <div class="prop-media">
+              <img src="assets/images/interior.jpg" alt="Interior elegante da Cobertura The Madison" data-i18n-alt="prop5_alt" loading="lazy">
+              <span class="prop-badge" data-i18n="badge_apartment">Apartamento</span>
+            </div>
+            <div class="prop-body">
+              <p class="prop-loc">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Maple Hill
+              </p>
+              <h3 class="prop-name" data-i18n="prop5_name">Cobertura The Madison</h3>
+              <ul class="prop-spec" aria-label="Especificações">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg>2</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.68 3 4 3.68 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5H4"/><path d="M10 5 8 7"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M17 19v2"/></svg>2</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>1.480 sqft</li>
+              </ul>
+              <p class="prop-price">US$ 840.000</p>
+              <a class="btn btn--ghost prop-cta" href="#contact" data-i18n="view_details">Ver detalhes</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="buy section-pad" id="buy">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="buy_eyebrow">Para compradores</p>
+          <h2 class="section-title" data-i18n="buy_title">Uma forma mais tranquila de comprar</h2>
+          <p class="section-sub" data-i18n="buy_lead">Comprar um imóvel não precisa ser exaustivo. Simplificamos cada etapa para que seu tempo seja investido no que importa: encontrar a casa certa.</p>
+        </div>
+
+        <div class="buy-layout">
+          <div class="buy-steps reveal">
+            <ol class="step-list">
+              <li class="step">
+                <span class="step-num" aria-hidden="true">01</span>
+                <div class="step-body">
+                  <h3 class="step-title" data-i18n="buy_step1_title">Defina sua busca</h3>
+                  <p class="step-text" data-i18n="buy_step1_text">Alinhamos objetivos, financiamento e prioridades antes de você conhecer o primeiro imóvel.</p>
+                </div>
+              </li>
+              <li class="step">
+                <span class="step-num" aria-hidden="true">02</span>
+                <div class="step-body">
+                  <h3 class="step-title" data-i18n="buy_step2_title">Visite e compare</h3>
+                  <p class="step-text" data-i18n="buy_step2_text">Visitas selecionadas e comparações honestas — sem pressão e sem rodeios.</p>
+                </div>
+              </li>
+              <li class="step">
+                <span class="step-num" aria-hidden="true">03</span>
+                <div class="step-body">
+                  <h3 class="step-title" data-i18n="buy_step3_title">Feche com confiança</h3>
+                  <p class="step-text" data-i18n="buy_step3_text">Propostas, inspeções e documentação conduzidas por especialistas até a sua assinatura.</p>
+                </div>
+              </li>
+            </ol>
+            <a href="#contact" class="btn btn--solid" data-i18n="buy_cta">Agendar uma visita</a>
+          </div>
+
+          <figure class="side-figure reveal">
+            <img src="assets/images/neighborhood.jpg" alt="Casa de charme entre árvores em um bairro de Austin" data-i18n-alt="buy_img_alt" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sell section-pad" id="sell">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="sell_eyebrow">Para vendedores</p>
+          <h2 class="section-title" data-i18n="sell_title">Venda com estratégia, não com esperança</h2>
+          <p class="section-sub" data-i18n="sell_lead">Uma estratégia de venda que começa com o preço certo — e termina na assinatura.</p>
+        </div>
+
+        <div class="sell-highlight reveal">
+          <div class="sell-highlight-copy">
+            <span class="badge-free" data-i18n="sell_badge">Avaliação gratuita</span>
+            <h3 class="highlight-title" data-i18n="sell_step1_title">O valor real da sua casa</h3>
+            <p class="highlight-text" data-i18n="sell_step1_text">Análise comparativa de mercado e sessão de precificação sem compromisso — gratuita mesmo que você não prossiga.</p>
+          </div>
+          <a href="#contact" class="btn btn--solid sell-highlight-cta" data-i18n="sell_cta">Solicitar avaliação</a>
+        </div>
+
+        <div class="sell-grid">
+          <div class="sell-card reveal">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3 class="step-title" data-i18n="sell_step2_title">Marketing & fotos</h3>
+            <p class="step-text" data-i18n="sell_step2_text">Fotografia profissional, filmagem e presença nos principais portais de luxo — colocando sua casa diante do comprador certo.</p>
+          </div>
+          <div class="sell-card reveal">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3 class="step-title" data-i18n="sell_step3_title">Negociação & fechamento</h3>
+            <p class="step-text" data-i18n="sell_step3_text">Negociamos firme, mantemos você informado e cuidamos de cada detalhe da papelada até a transferência das chaves.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rent section-pad" id="rent">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="rent_eyebrow">Para locatários</p>
+          <h2 class="section-title" data-i18n="rent_title">Alugue com conforto e segurança</h2>
+          <p class="section-sub" data-i18n="rent_lead">Locação premium sem burocracia surpresa. Imóveis prontos para morar e processos claros do início ao fim.</p>
+        </div>
+
+        <div class="rent-grid">
+          <article class="rent-card reveal">
+            <span class="rent-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 2-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0 3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+            </span>
+            <h3 class="card-title" data-i18n="rent1_title">Imóveis selecionados</h3>
+            <p class="card-text" data-i18n="rent1_text">Cada imóvel é visitado e aprovado pela nossa equipe antes de chegar à vitrine.</p>
+          </article>
+          <article class="rent-card reveal">
+            <span class="rent-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+            </span>
+            <h3 class="card-title" data-i18n="rent2_title">Inscrições online</h3>
+            <p class="card-text" data-i18n="rent2_text">Candidate-se em minutos, com documentos organizados e acompanhamento em tempo real.</p>
+          </article>
+          <article class="rent-card reveal">
+            <span class="rent-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <h3 class="card-title" data-i18n="rent3_title">Análise de crédito orientada</h3>
+            <p class="card-text" data-i18n="rent3_text">Apoio transparente na verificação de histórico e crédito, com orientação honesta em cada etapa.</p>
+          </article>
+        </div>
+
+        <div class="section-cta reveal">
+          <a href="#properties" class="btn btn--outline" data-i18n="rent_cta">Explorar aluguéis</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="neighborhoods section-pad" id="neighborhoods">
+      <div class="container">
+        <div class="nb-layout">
+          <div class="nb-intro reveal">
+            <p class="eyebrow" data-i18n="nb_eyebrow">Bairros</p>
+            <h2 class="section-title" data-i18n="nb_title">Bairros que amamos</h2>
+            <p class="section-sub" data-i18n="nb_intro">Comunidades escolhidas pela qualidade de vida, pelas escolas e pelo acesso a tudo o que Austin tem a oferecer.</p>
+            <figure class="side-figure nb-figure">
+              <img src="assets/images/neighborhood.jpg" alt="Rua arborizada de um bairro residencial" data-i18n-alt="nb_img_alt" loading="lazy">
+            </figure>
+            <a href="#properties" class="btn btn--ghost-invert nb-cta" data-i18n="nb_cta">Ver o portfólio</a>
+          </div>
+
+          <div class="nb-grid">
+            <article class="nb-card reveal">
+              <h3 class="nb-name">Maple Hill</h3>
+              <p class="nb-price" data-i18n="nb1_price">A partir de US$ 1,2M</p>
+              <p class="nb-note" data-i18n="nb1_note">Escolas premiadas, trilhas sombreadas e cafeterias na avenida principal.</p>
+            </article>
+            <article class="nb-card reveal">
+              <h3 class="nb-name">Cedar Point</h3>
+              <p class="nb-price" data-i18n="nb2_price">A partir de US$ 1,8M</p>
+              <p class="nb-note" data-i18n="nb2_note">Lotes amplos, clube de campo nas proximidades e vista para o canyon.</p>
+            </article>
+            <article class="nb-card reveal">
+              <h3 class="nb-name">Riverbend</h3>
+              <p class="nb-price" data-i18n="nb3_price">A partir de US$ 1,5M</p>
+              <p class="nb-note" data-i18n="nb3_note">Vila à beira do lago, píer privativo e jantares às margens.</p>
+            </article>
+            <article class="nb-card reveal">
+              <h3 class="nb-name">Stonecrest</h3>
+              <p class="nb-price" data-i18n="nb4_price">A partir de US$ 2,5M</p>
+              <p class="nb-note" data-i18n="nb4_note">Condomínio fechado, mansões de arquitetura e segurança 24h.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-copy reveal">
+            <p class="eyebrow" data-i18n="about_eyebrow">A corretora</p>
+            <h2 class="section-title" data-i18n="about_title">Mais do que corretagem</h2>
+            <p class="about-text" data-i18n="about_text1">A HAVEN REALTY nasceu em Austin para ser mais do que uma corretora: somos consultores de estilo de vida. Reunimos casas extraordinárias e pessoas prontas para o próximo capítulo.</p>
+            <p class="about-text" data-i18n="about_text2">Nosso time mora nas vizinhanças que representa. Por isso sabemos se uma casa recebe o sol da tarde e se a rua é silenciosa aos domingos.</p>
+
+            <ul class="about-list">
+              <li>
+                <h3 class="card-title" data-i18n="about_val1_title">Colocamos você primeiro</h3>
+                <p class="card-text" data-i18n="about_val1_text">Cada decisão começa pelos seus objetivos — nunca pelos nossos números.</p>
+              </li>
+              <li>
+                <h3 class="card-title" data-i18n="about_val2_title">Curadoria sem concessões</h3>
+                <p class="card-text" data-i18n="about_val2_text">Preferimos poucos imóveis extraordinários a uma vitrine cheia de listagens medíocres.</p>
+              </li>
+              <li>
+                <h3 class="card-title" data-i18n="about_val3_title">Expertise local</h3>
+                <p class="card-text" data-i18n="about_val3_text">Licenciados, experientes e presentes — do fechamento ao pós-venda.</p>
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn btn--solid" data-i18n="about_cta">Fale com a gente</a>
+          </div>
+
+          <figure class="side-figure reveal">
+            <img src="assets/images/team.jpg" alt="Equipe da HAVEN REALTY no escritório" data-i18n-alt="about_img_alt" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="contact_eyebrow">Contato</p>
+          <h2 class="section-title" data-i18n="contact_title">Vamos conversar</h2>
+          <p class="section-sub" data-i18n="contact_text">Conte o que você procura — uma resposta com curadoria em até 24 horas.</p>
+        </div>
+
+        <div class="contact-layout">
+          <form class="form-card reveal" id="contact-form" novalidate>
+            <div class="field">
+              <label for="cf-name" data-i18n="field_name">Nome</label>
+              <input class="input" type="text" id="cf-name" name="name" data-i18n-ph="name_ph" placeholder="Seu nome completo" required>
+            </div>
+            <div class="field">
+              <label for="cf-email" data-i18n="field_email">E-mail</label>
+              <input class="input" type="email" id="cf-email" name="email" data-i18n-ph="email_ph" placeholder="voce@email.com" required>
+            </div>
+            <div class="field">
+              <label for="cf-interest" data-i18n="field_interest">Interesse</label>
+              <div class="select-wrap">
+                <select class="input select-chevron" id="cf-interest" name="interest">
+                  <option data-i18n="int_buy">Comprar</option>
+                  <option data-i18n="int_sell">Vender</option>
+                  <option data-i18n="int_rent">Alugar</option>
+                  <option data-i18n="int_valuation">Avaliação gratuita</option>
+                  <option data-i18n="int_other">Outro</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cf-message" data-i18n="field_message">Mensagem</label>
+              <textarea class="input" id="cf-message" name="message" data-i18n-ph="msg_ph" placeholder="Conte-nos o que procura..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--solid form-submit" data-i18n="submit">Enviar mensagem</button>
+            <p class="form-success" id="form-success" role="status" data-i18n="form_success">Obrigado! Sua mensagem foi enviada. Retornaremos em até 24 horas.</p>
+          </form>
+
+          <aside class="contact-info reveal">
+            <h3 class="card-title" data-i18n="info_title">Nosso escritório</h3>
+            <ul class="info-list">
+              <li>
+                <span class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div>
+                  <span class="info-label" data-i18n="info_address_label">Endereço</span>
+                  <span class="info-value" data-i18n="info_address">18 Birchwood Ave, Austin, TX 78705</span>
+                </div>
+              </li>
+              <li>
+                <span class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <div>
+                  <span class="info-label" data-i18n="info_phone_label">Telefone</span>
+                  <a class="info-value" href="tel:+15550102030" data-i18n="info_phone">(555) 010-2030</a>
+                </div>
+              </li>
+              <li>
+                <span class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </span>
+                <div>
+                  <span class="info-label" data-i18n="info_email_label">E-mail</span>
+                  <a class="info-value" href="mailto:hello@havenrealty.com" data-i18n="info_email">hello@havenrealty.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </span>
+                <div>
+                  <span class="info-label" data-i18n="info_hours_label">Horário</span>
+                  <span class="info-value hours-value" data-i18n="info_hours">Seg–Sex · 9h às 18h</span>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-final">
+      <div class="container cta-final-inner reveal">
+        <h2 class="cta-final-title" data-i18n="cta_title">Sua próxima casa está mais perto do que você imagina.</h2>
+        <p class="cta-final-text" data-i18n="cta_text">Atendimento dedicado da primeira visita à chave na mão.</p>
+        <a href="#contact" class="btn btn--light" data-i18n="cta_button">Conversar com um consultor</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="wordmark footer-wordmark" href="#top" aria-label="HAVEN REALTY">
+            <span class="wm">HAVEN</span><span class="wm-sub">REALTY</span>
+          </a>
+          <p class="footer-tagline" data-i18n="footer_tagline">Imobiliária residencial premium em Austin, Texas — casas com alma e processos sem atrito.</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16"/><path d="M20 4 4 20"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Links do rodapé">
+          <h4 data-i18n="footer_links_title">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#properties" data-i18n="nav_properties">Propriedades</a></li>
+            <li><a href="#buy" data-i18n="nav_buy">Comprar</a></li>
+            <li><a href="#sell" data-i18n="nav_sell">Vender</a></li>
+            <li><a href="#rent" data-i18n="nav_rent">Alugar</a></li>
+            <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact_title">Contato</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.google.com/maps" target="_blank" rel="noopener" data-i18n="info_address">18 Birchwood Ave, Austin, TX 78705</a></li>
+            <li><a href="tel:+15550102030" data-i18n="info_phone">(555) 010-2030</a></li>
+            <li><a href="mailto:hello@havenrealty.com" data-i18n="info_email">hello@havenrealty.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_hours_title">Atendimento</h4>
+          <p class="footer-hours" data-i18n="footer_hours">Seg–Sex · 9h às 18h
+Sáb · 10h às 14h</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© <span id="footer-year">2026</span> HAVEN REALTY. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
+        <p class="footer-demo" data-i18n="footer_demo">Projeto demo de portfólio</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
